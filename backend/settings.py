@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['school-wellness-organization.teb-ostrow.pl', 'teb-ostrow.pl']
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
