@@ -34,8 +34,6 @@ ALLOWED_HOSTS = ['school-wellness-organization.teb-ostrow.pl', 'teb-ostrow.pl']
 # Application definition
 
 INSTALLED_APPS = [
-    'grappelli',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +56,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
 
     'corsheaders.middleware.CorsMiddleware',  # <--- na początku
+    'whitenouse.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
